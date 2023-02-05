@@ -14,7 +14,19 @@ while (i < n):
     list.append(randrange(10))
     i = i + 1
 
+max = list[0]
+i = 1
+while (i < n):
+    if (list[i] > max):
+        max = list[i]
+    i += 1
 
+min = list[0]
+i = 1
+while (i < n):
+    if (list[i] < min):
+        min = list[i]
+    i += 1
 
 print(f"Input: {n} => {list}")
-# print(f"Output: ")
+print(f"Output: {min}, {max}")
